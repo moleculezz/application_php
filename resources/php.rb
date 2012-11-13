@@ -33,3 +33,8 @@ def database(*args, &block)
   @database ||= Mash.new
   @database.update(options_block(*args, &block))
 end
+
+def settings(*args, &block)
+  @settings ||= Mash.new
+  @settings.update(options_block(*args, &block))
+end

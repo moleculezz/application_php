@@ -70,6 +70,7 @@ def create_settings_file
     variables(
       :path => "#{new_resource.path}/current",
       :host => host,
+      :settings => new_resource.settings,
       :database => new_resource.database
     )
   end
